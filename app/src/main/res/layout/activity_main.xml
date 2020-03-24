@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/01_Fahrtangebot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="Create a Ride"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/text_start"
+            android:layout_width="156dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:text="Your start adress"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <TextView
+            android:id="@+id/text_target"
+            android:layout_width="196dp"
+            android:layout_height="30"
+            android:layout_marginStart="8dp"
+            android:text="Your destination adress"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/start_adress"
+            android:layout_width="395dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="hint"
+            android:text="start adress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="Date start"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="130"
+            android:layout_height="30"
+            android:layout_marginStart="8dp"
+            android:text="Time start"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <EditText
+            android:id="@+id/input_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+        <TextView
+            android:id="@+id/text_one_way"
+            android:layout_width="130dp"
+            android:layout_height="30"
+            android:layout_marginStart="8"
+            android:text="One way ride"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="215dp"
+            android:layout_height="35"
+            android:text="ToggleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <TextView
+            android:id="@+id/text_rental"
+            android:layout_width="131dp"
+            android:layout_height="30"
+            android:layout_marginStart="8dp"
+            android:text="Car is rental"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="452dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="210dp"
+            android:layout_height="35"
+            android:text="ToggleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.804"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="452dp" />
+
+        <TextView
+            android:id="@+id/text_car"
+            android:layout_width="142dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8"
+            android:text="Car brand model"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="508dp" />
+
+        <EditText
+            android:id="@+id/input_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="input_model"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="508dp" />
+
+        <TextView
+            android:id="@+id/text_licensde"
+            android:layout_width="129dp"
+            android:layout_height="30"
+            android:layout_marginStart="8dp"
+            android:text="Car license nr."
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="567dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="input license no."
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="567dp" />
+
+        <TextView
+            android:id="@+id/text_picture"
+            android:layout_width="126dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="Car picture"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="622dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="209dp"
+            android:layout_height="106dp"
+            app:srcCompat="@android:mipmap/sym_def_app_icon"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="627dp" />
+
+        <EditText
+            android:id="@+id/destination_adress"
+            android:layout_width="389dp"
+            android:layout_height="37"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="destination adress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="204dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
